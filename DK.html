@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .tableStyle td{
+            padding: 5px;
+            text-align: left;
+            color: #ffb203;
+        }
+        .tableStyle th {
+             text-align: right;
+            color: blue;
+            vertical-align: top;
+         }
+        th.center {
+            text-align: center;
+            background: #ff4c00;
+            color: white;
+
+        }
+
+        th.tableStyle3 {
+            background: darkcyan;
+            color: cyan;
+            width: 65%;
+            text-align: left;
+        }
+        .Dangki td{
+            color: blue;
+            padding: 5px;
+            vertical-align: top;
+
+        }
+        td,th{
+            border: 1px;
+        }
+        td.sex {
+            color: black;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="http://toi.vn" method="POST">
+        <table class="tableStyle">
+            <tr>
+                <th class="center" colspan="4"> SỞ THÍCH CỦA BẠN </th>
+            </tr>
+                <th> Họ và tên </th>
+                <td colspan="3"> <input type="text" name="yourname" size="20" style="border-style: inset"></td>
+            <tr>
+                <th>Email</th>
+                <td colspan="3"><input type="text" name="email" size="15" style="border-style: inset"></td>
+            </tr>
+            <tr>
+                <th rowspan="4">Sở thích</th>
+                <td>
+                    <input type="checkbox" name="hobby">Thể thao
+                </td>
+                <td><input style="border-style: inset" type="checkbox" name="hobby">Âm nhạc</td>
+                <td><input style="border-style: inset" type="checkbox" name="hobby">Đọc sách</td>
+            </tr>
+            <tr>
+                <td><input style="border-style: inset" type="checkbox" name="hobby"> Lướt web</td>
+                <td><input style="border-style: inset" type="checkbox" name="hobby">Chơi game</td>
+                <td> <input style="border-style: inset" type="checkbox" name="hobby">Điện ảnh</td>
+            </tr>
+            <tr>
+                <td> <input style="border-style: inset" type="checkbox" name="hobby">Du lịch</td>
+            </tr>
+            <tr>
+                <td> <input style="border-style: outset" type="submit" name="SubmitForm" value="Gửi thông tin"> </td>
+                <td><input style="border-style: outset" type="submit" name="ResetForm" value="Nhập lại"></td>
+            </tr>
+
+        </table>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<!--<form>-->
+<!--&lt;!&ndash;    <div style="color: white;background-color: #d61b06" >&ndash;&gt;-->
+<!--&lt;!&ndash;       <h2>ĐĂNG KÝ HỌC VIÊN</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div id="Ten">&ndash;&gt;-->
+<!--&lt;!&ndash;    <p>Họ và tên </p>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input type="text" name="yourname" style="border-style: inset">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <p>Ngày sinh </p>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input type="text" name="date" style="border-style: inset">&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <p> Giới tính </p>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input type="radio" name="sex" style="border-style: outset"> <p>Nam</p> <input type="radio" name="sex"> <p>Nữ</p>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <p>Địa chỉ </p>&ndash;&gt;-->
+<!--&lt;!&ndash;        <textarea cols="30" rows="5"> </textarea>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--</form>-->
+<form>
+    <table class="Dangki">
+        <tr>
+            <th class="tableStyle3" colspan="2"> ĐĂNG KÝ HỌC VIÊN</th>
+        </tr>
+        <tr>
+            <td> Họ và tên </td>
+            <td><input type="text" name="yourname" style="border-style: inset"></td>
+        </tr>
+        <tr>
+            <td> Ngày sinh </td>
+            <td><input type="text" name="Date" style="border-style: inset"></td>
+        <tr>
+            <td> Giới tính</td>
+            <td class="sex"><input type="radio" name="sex" >Nam<input  type="radio" name="sex">Nữ</td>
+        </tr>
+        <tr>
+            <td> Địa chỉ </td>
+            <td><textarea name="adress" rows="7" cols="30" > </textarea></td>
+        </tr>
+        <tr>
+            <td> Lớp</td>
+            <td><select name="Class">
+                <option value="selection">--Chọn lớp--</option>
+                <option value="Classc01">Lớp C01</option>
+                <option value="Classc02">Lớp C02</option>
+                <option value="Classc03">Lớp C03</option>
+                <option value="Classc04">Lớp C04</option>
+                <option value="Classc05">Lớp C05</option>
+                <option value="Classc06">Lớp C06</option>
+            </select> </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="email" style="border-style: inset" size="20"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Điện thoại</td>
+            <td><input type="number" name="number" value="number" style="border-style: inset"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="Register" value="Đăng ký" style="border-style: outset">
+                <input type="submit"name="reset" value="Nhập lại" style="border-style: outset"></td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
